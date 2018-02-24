@@ -1,0 +1,2 @@
+speech_service
+-DCATKIN_DEVEL_PREFIX=/home/pi/apollo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pi/apollo_ws/install -G Unix Makefiles
