@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/speech_service_generate_messages_cpp"
-  "/home/pi/apollo_ws/devel/include/speech_service/AddTwoInts.h"
+  "/home/pi/apollo_ws/devel/include/speech_service/ReturnDetectedSpeech.h"
 )
 
 # Per-language clean rules from dependency scanning.

@@ -53,22 +53,22 @@ CMAKE_BINARY_DIR = /home/pi/apollo_ws/build
 # Include the progress variables for this target.
 include speech_service/CMakeFiles/speech_service_generate_messages_py.dir/progress.make
 
-speech_service/CMakeFiles/speech_service_generate_messages_py: /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_AddTwoInts.py
+speech_service/CMakeFiles/speech_service_generate_messages_py: /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_ReturnDetectedSpeech.py
 speech_service/CMakeFiles/speech_service_generate_messages_py: /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/__init__.py
 
 
-/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_AddTwoInts.py: /opt/ros/indigo/lib/genpy/gensrv_py.py
-/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_AddTwoInts.py: /home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV speech_service/AddTwoInts"
-	cd /home/pi/apollo_ws/build/speech_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p speech_service -o /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv
+/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_ReturnDetectedSpeech.py: /opt/ros/indigo/lib/genpy/gensrv_py.py
+/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_ReturnDetectedSpeech.py: /home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code from SRV speech_service/ReturnDetectedSpeech"
+	cd /home/pi/apollo_ws/build/speech_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/gensrv_py.py /home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p speech_service -o /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv
 
 /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/__init__.py: /opt/ros/indigo/lib/genpy/genmsg_py.py
-/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/__init__.py: /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_AddTwoInts.py
+/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/__init__.py: /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_ReturnDetectedSpeech.py
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating Python srv __init__.py for speech_service"
 	cd /home/pi/apollo_ws/build/speech_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv --initpy
 
 speech_service_generate_messages_py: speech_service/CMakeFiles/speech_service_generate_messages_py
-speech_service_generate_messages_py: /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_AddTwoInts.py
+speech_service_generate_messages_py: /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_ReturnDetectedSpeech.py
 speech_service_generate_messages_py: /home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/__init__.py
 speech_service_generate_messages_py: speech_service/CMakeFiles/speech_service_generate_messages_py.dir/build.make
 

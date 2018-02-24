@@ -4,6 +4,6 @@
 (defsystem "speech_service-srv"
   :depends-on (:roslisp-msg-protocol :roslisp-utils )
   :components ((:file "_package")
-    (:file "AddTwoInts" :depends-on ("_package_AddTwoInts"))
-    (:file "_package_AddTwoInts" :depends-on ("_package"))
+    (:file "ReturnDetectedSpeech" :depends-on ("_package_ReturnDetectedSpeech"))
+    (:file "_package_ReturnDetectedSpeech" :depends-on ("_package"))
   ))

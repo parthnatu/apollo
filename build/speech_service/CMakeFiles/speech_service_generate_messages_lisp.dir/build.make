@@ -53,16 +53,16 @@ CMAKE_BINARY_DIR = /home/pi/apollo_ws/build
 # Include the progress variables for this target.
 include speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/progress.make
 
-speech_service/CMakeFiles/speech_service_generate_messages_lisp: /home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv/AddTwoInts.lisp
+speech_service/CMakeFiles/speech_service_generate_messages_lisp: /home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv/ReturnDetectedSpeech.lisp
 
 
-/home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv/AddTwoInts.lisp: /opt/ros/indigo/lib/genlisp/gen_lisp.py
-/home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv/AddTwoInts.lisp: /home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from speech_service/AddTwoInts.srv"
-	cd /home/pi/apollo_ws/build/speech_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p speech_service -o /home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv
+/home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv/ReturnDetectedSpeech.lisp: /opt/ros/indigo/lib/genlisp/gen_lisp.py
+/home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv/ReturnDetectedSpeech.lisp: /home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Lisp code from speech_service/ReturnDetectedSpeech.srv"
+	cd /home/pi/apollo_ws/build/speech_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/genlisp/cmake/../../../lib/genlisp/gen_lisp.py /home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p speech_service -o /home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv
 
 speech_service_generate_messages_lisp: speech_service/CMakeFiles/speech_service_generate_messages_lisp
-speech_service_generate_messages_lisp: /home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv/AddTwoInts.lisp
+speech_service_generate_messages_lisp: /home/pi/apollo_ws/devel/share/common-lisp/ros/speech_service/srv/ReturnDetectedSpeech.lisp
 speech_service_generate_messages_lisp: speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/build.make
 
 .PHONY : speech_service_generate_messages_lisp

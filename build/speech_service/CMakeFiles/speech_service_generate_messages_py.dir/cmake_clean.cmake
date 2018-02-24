@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/speech_service_generate_messages_py"
-  "/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_AddTwoInts.py"
+  "/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/_ReturnDetectedSpeech.py"
   "/home/pi/apollo_ws/devel/lib/python2.7/dist-packages/speech_service/srv/__init__.py"
 )
 

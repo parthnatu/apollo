@@ -53,18 +53,18 @@ CMAKE_BINARY_DIR = /home/pi/apollo_ws/build
 # Include the progress variables for this target.
 include speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/progress.make
 
-speech_service/CMakeFiles/speech_service_generate_messages_cpp: /home/pi/apollo_ws/devel/include/speech_service/AddTwoInts.h
+speech_service/CMakeFiles/speech_service_generate_messages_cpp: /home/pi/apollo_ws/devel/include/speech_service/ReturnDetectedSpeech.h
 
 
-/home/pi/apollo_ws/devel/include/speech_service/AddTwoInts.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
-/home/pi/apollo_ws/devel/include/speech_service/AddTwoInts.h: /home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv
-/home/pi/apollo_ws/devel/include/speech_service/AddTwoInts.h: /opt/ros/indigo/share/gencpp/msg.h.template
-/home/pi/apollo_ws/devel/include/speech_service/AddTwoInts.h: /opt/ros/indigo/share/gencpp/srv.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from speech_service/AddTwoInts.srv"
-	cd /home/pi/apollo_ws/build/speech_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p speech_service -o /home/pi/apollo_ws/devel/include/speech_service -e /opt/ros/indigo/share/gencpp/cmake/..
+/home/pi/apollo_ws/devel/include/speech_service/ReturnDetectedSpeech.h: /opt/ros/indigo/lib/gencpp/gen_cpp.py
+/home/pi/apollo_ws/devel/include/speech_service/ReturnDetectedSpeech.h: /home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv
+/home/pi/apollo_ws/devel/include/speech_service/ReturnDetectedSpeech.h: /opt/ros/indigo/share/gencpp/msg.h.template
+/home/pi/apollo_ws/devel/include/speech_service/ReturnDetectedSpeech.h: /opt/ros/indigo/share/gencpp/srv.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from speech_service/ReturnDetectedSpeech.srv"
+	cd /home/pi/apollo_ws/build/speech_service && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/indigo/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv -Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg -p speech_service -o /home/pi/apollo_ws/devel/include/speech_service -e /opt/ros/indigo/share/gencpp/cmake/..
 
 speech_service_generate_messages_cpp: speech_service/CMakeFiles/speech_service_generate_messages_cpp
-speech_service_generate_messages_cpp: /home/pi/apollo_ws/devel/include/speech_service/AddTwoInts.h
+speech_service_generate_messages_cpp: /home/pi/apollo_ws/devel/include/speech_service/ReturnDetectedSpeech.h
 speech_service_generate_messages_cpp: speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/build.make
 
 .PHONY : speech_service_generate_messages_cpp

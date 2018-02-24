@@ -15,9 +15,9 @@ add_custom_target(speech_service_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv" NAME_WE)
 add_custom_target(_speech_service_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "speech_service" "/home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "speech_service" "/home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv" ""
 )
 
 #
@@ -29,7 +29,7 @@ add_custom_target(_speech_service_generate_messages_check_deps_${_filename}
 
 ### Generating Services
 _generate_srv_cpp(speech_service
-  "/home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv"
+  "/home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/speech_service
@@ -47,7 +47,7 @@ add_custom_target(speech_service_generate_messages_cpp
 add_dependencies(speech_service_generate_messages speech_service_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv" NAME_WE)
 add_dependencies(speech_service_generate_messages_cpp _speech_service_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -62,7 +62,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS speech_service_generate_messages_cp
 
 ### Generating Services
 _generate_srv_lisp(speech_service
-  "/home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv"
+  "/home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/speech_service
@@ -80,7 +80,7 @@ add_custom_target(speech_service_generate_messages_lisp
 add_dependencies(speech_service_generate_messages speech_service_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv" NAME_WE)
 add_dependencies(speech_service_generate_messages_lisp _speech_service_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -95,7 +95,7 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS speech_service_generate_messages_li
 
 ### Generating Services
 _generate_srv_py(speech_service
-  "/home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv"
+  "/home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/speech_service
@@ -113,7 +113,7 @@ add_custom_target(speech_service_generate_messages_py
 add_dependencies(speech_service_generate_messages speech_service_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pi/apollo_ws/src/speech_service/srv/AddTwoInts.srv" NAME_WE)
+get_filename_component(_filename "/home/pi/apollo_ws/src/speech_service/srv/ReturnDetectedSpeech.srv" NAME_WE)
 add_dependencies(speech_service_generate_messages_py _speech_service_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
