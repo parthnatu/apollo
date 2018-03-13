@@ -257,147 +257,17 @@ gtest/fast:
 .PHONY : gtest/fast
 
 #=============================================================================
-# Target rules for targets named std_msgs_generate_messages_cpp
+# Target rules for targets named _catkin_empty_exported_target
 
 # Build rule for target.
-std_msgs_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_cpp
-.PHONY : std_msgs_generate_messages_cpp
+_catkin_empty_exported_target: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _catkin_empty_exported_target
+.PHONY : _catkin_empty_exported_target
 
 # fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named speech_service_generate_messages_lisp
-
-# Build rule for target.
-speech_service_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service_generate_messages_lisp
-.PHONY : speech_service_generate_messages_lisp
-
-# fast build rule for target.
-speech_service_generate_messages_lisp/fast:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/build
-.PHONY : speech_service_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named speech_service_genlisp
-
-# Build rule for target.
-speech_service_genlisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service_genlisp
-.PHONY : speech_service_genlisp
-
-# fast build rule for target.
-speech_service_genlisp/fast:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_genlisp.dir/build.make speech_service/CMakeFiles/speech_service_genlisp.dir/build
-.PHONY : speech_service_genlisp/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_py
-
-# Build rule for target.
-std_msgs_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_py
-.PHONY : std_msgs_generate_messages_py
-
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
-
-#=============================================================================
-# Target rules for targets named speech_service_genpy
-
-# Build rule for target.
-speech_service_genpy: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service_genpy
-.PHONY : speech_service_genpy
-
-# fast build rule for target.
-speech_service_genpy/fast:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_genpy.dir/build.make speech_service/CMakeFiles/speech_service_genpy.dir/build
-.PHONY : speech_service_genpy/fast
-
-#=============================================================================
-# Target rules for targets named speech_service_gencpp
-
-# Build rule for target.
-speech_service_gencpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service_gencpp
-.PHONY : speech_service_gencpp
-
-# fast build rule for target.
-speech_service_gencpp/fast:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_gencpp.dir/build.make speech_service/CMakeFiles/speech_service_gencpp.dir/build
-.PHONY : speech_service_gencpp/fast
-
-#=============================================================================
-# Target rules for targets named speech_service_generate_messages
-
-# Build rule for target.
-speech_service_generate_messages: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service_generate_messages
-.PHONY : speech_service_generate_messages
-
-# fast build rule for target.
-speech_service_generate_messages/fast:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages.dir/build
-.PHONY : speech_service_generate_messages/fast
-
-#=============================================================================
-# Target rules for targets named std_msgs_generate_messages_lisp
-
-# Build rule for target.
-std_msgs_generate_messages_lisp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 std_msgs_generate_messages_lisp
-.PHONY : std_msgs_generate_messages_lisp
-
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
-
-#=============================================================================
-# Target rules for targets named speech_service_generate_messages_cpp
-
-# Build rule for target.
-speech_service_generate_messages_cpp: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service_generate_messages_cpp
-.PHONY : speech_service_generate_messages_cpp
-
-# fast build rule for target.
-speech_service_generate_messages_cpp/fast:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/build
-.PHONY : speech_service_generate_messages_cpp/fast
-
-#=============================================================================
-# Target rules for targets named _speech_service_generate_messages_check_deps_ReturnDetectedSpeech
-
-# Build rule for target.
-_speech_service_generate_messages_check_deps_ReturnDetectedSpeech: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 _speech_service_generate_messages_check_deps_ReturnDetectedSpeech
-.PHONY : _speech_service_generate_messages_check_deps_ReturnDetectedSpeech
-
-# fast build rule for target.
-_speech_service_generate_messages_check_deps_ReturnDetectedSpeech/fast:
-	$(MAKE) -f speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/build.make speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/build
-.PHONY : _speech_service_generate_messages_check_deps_ReturnDetectedSpeech/fast
-
-#=============================================================================
-# Target rules for targets named speech_service_generate_messages_py
-
-# Build rule for target.
-speech_service_generate_messages_py: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service_generate_messages_py
-.PHONY : speech_service_generate_messages_py
-
-# fast build rule for target.
-speech_service_generate_messages_py/fast:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_py.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_py.dir/build
-.PHONY : speech_service_generate_messages_py/fast
+_catkin_empty_exported_target/fast:
+	$(MAKE) -f voice_file/CMakeFiles/_catkin_empty_exported_target.dir/build.make voice_file/CMakeFiles/_catkin_empty_exported_target.dir/build
+.PHONY : _catkin_empty_exported_target/fast
 
 # Help Target
 help:
@@ -419,17 +289,7 @@ help:
 	@echo "... install/strip"
 	@echo "... gtest_main"
 	@echo "... gtest"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... speech_service_generate_messages_lisp"
-	@echo "... speech_service_genlisp"
-	@echo "... std_msgs_generate_messages_py"
-	@echo "... speech_service_genpy"
-	@echo "... speech_service_gencpp"
-	@echo "... speech_service_generate_messages"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... speech_service_generate_messages_cpp"
-	@echo "... _speech_service_generate_messages_check_deps_ReturnDetectedSpeech"
-	@echo "... speech_service_generate_messages_py"
+	@echo "... _catkin_empty_exported_target"
 .PHONY : help
 
 

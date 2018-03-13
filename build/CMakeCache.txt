@@ -265,6 +265,12 @@ genmsg_DIR:PATH=/opt/ros/indigo/share/genmsg/cmake
 genpy_DIR:PATH=/opt/ros/indigo/share/genpy/cmake
 
 //Value Computed by CMake
+google_assistant_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/google_assistant
+
+//Value Computed by CMake
+google_assistant_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/google_assistant
+
+//Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/gtest
 
 //Dependencies for the target
@@ -311,6 +317,12 @@ rospy_DIR:PATH=/opt/ros/indigo/share/rospy/cmake
 rostime_DIR:PATH=/opt/ros/indigo/share/rostime/cmake
 
 //Value Computed by CMake
+speech_detector_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/speech_detector
+
+//Value Computed by CMake
+speech_detector_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/speech_detector
+
+//Value Computed by CMake
 speech_service_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/speech_service
 
 //Value Computed by CMake
@@ -318,6 +330,12 @@ speech_service_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/speech_service
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/indigo/share/std_msgs/cmake
+
+//Value Computed by CMake
+voice_file_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/voice_file
+
+//Value Computed by CMake
+voice_file_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/voice_file
 
 
 ########################
@@ -421,7 +439,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=3
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

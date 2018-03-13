@@ -5,4 +5,6 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
-subdirs(speech_service)
+subdirs(voice_file)
+subdirs(google_assistant)
+subdirs(speech_detector)

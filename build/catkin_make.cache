@@ -1,2 +1,2 @@
-speech_service
+google_assistant:speech_detector:voice_file
 -DCATKIN_DEVEL_PREFIX=/home/pi/apollo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pi/apollo_ws/install -G Unix Makefiles

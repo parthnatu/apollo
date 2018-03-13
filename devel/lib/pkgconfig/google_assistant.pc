@@ -1,0 +1,8 @@
+prefix=/home/pi/apollo_ws/devel
+
+Name: google_assistant
+Description: Description of google_assistant
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/apollo_ws/devel/lib 
+Requires: 

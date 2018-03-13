@@ -1,0 +1,8 @@
+prefix=/home/pi/apollo_ws/devel
+
+Name: voice_file
+Description: Description of voice_file
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pi/apollo_ws/devel/lib 
+Requires: 

@@ -117,7 +117,9 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/pi/apollo_ws/build/gtest/cmake_install.cmake")
-  include("/home/pi/apollo_ws/build/speech_service/cmake_install.cmake")
+  include("/home/pi/apollo_ws/build/voice_file/cmake_install.cmake")
+  include("/home/pi/apollo_ws/build/google_assistant/cmake_install.cmake")
+  include("/home/pi/apollo_ws/build/speech_detector/cmake_install.cmake")
 
 endif()
 

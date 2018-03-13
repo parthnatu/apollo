@@ -303,394 +303,90 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory speech_service
+# Directory level rules for directory voice_file
 
 # Convenience name for "all" pass in the directory.
-speech_service/all: speech_service/CMakeFiles/speech_service_generate_messages.dir/all
+voice_file/all:
 
-.PHONY : speech_service/all
+.PHONY : voice_file/all
 
 # Convenience name for "clean" pass in the directory.
-speech_service/clean: speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-speech_service/clean: speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/clean
-speech_service/clean: speech_service/CMakeFiles/speech_service_genlisp.dir/clean
-speech_service/clean: speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-speech_service/clean: speech_service/CMakeFiles/speech_service_genpy.dir/clean
-speech_service/clean: speech_service/CMakeFiles/speech_service_gencpp.dir/clean
-speech_service/clean: speech_service/CMakeFiles/speech_service_generate_messages.dir/clean
-speech_service/clean: speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-speech_service/clean: speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/clean
-speech_service/clean: speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/clean
-speech_service/clean: speech_service/CMakeFiles/speech_service_generate_messages_py.dir/clean
+voice_file/clean: voice_file/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
-.PHONY : speech_service/clean
+.PHONY : voice_file/clean
 
 # Convenience name for "preinstall" pass in the directory.
-speech_service/preinstall:
+voice_file/preinstall:
 
-.PHONY : speech_service/preinstall
+.PHONY : voice_file/preinstall
 
 #=============================================================================
-# Target rules for target speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir
+# Target rules for target voice_file/CMakeFiles/_catkin_empty_exported_target.dir
 
 # All Build rule for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/all:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_cpp"
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+voice_file/CMakeFiles/_catkin_empty_exported_target.dir/all:
+	$(MAKE) -f voice_file/CMakeFiles/_catkin_empty_exported_target.dir/build.make voice_file/CMakeFiles/_catkin_empty_exported_target.dir/depend
+	$(MAKE) -f voice_file/CMakeFiles/_catkin_empty_exported_target.dir/build.make voice_file/CMakeFiles/_catkin_empty_exported_target.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target _catkin_empty_exported_target"
+.PHONY : voice_file/CMakeFiles/_catkin_empty_exported_target.dir/all
 
 # Build rule for subdir invocation for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule: cmake_check_build_system
+voice_file/CMakeFiles/_catkin_empty_exported_target.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 voice_file/CMakeFiles/_catkin_empty_exported_target.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : voice_file/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
 # Convenience name for target.
-std_msgs_generate_messages_cpp: speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+_catkin_empty_exported_target: voice_file/CMakeFiles/_catkin_empty_exported_target.dir/rule
 
-.PHONY : std_msgs_generate_messages_cpp
-
-# clean rule for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+.PHONY : _catkin_empty_exported_target
 
 # clean rule for target.
-clean: speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/clean
+voice_file/CMakeFiles/_catkin_empty_exported_target.dir/clean:
+	$(MAKE) -f voice_file/CMakeFiles/_catkin_empty_exported_target.dir/build.make voice_file/CMakeFiles/_catkin_empty_exported_target.dir/clean
+.PHONY : voice_file/CMakeFiles/_catkin_empty_exported_target.dir/clean
+
+# clean rule for target.
+clean: voice_file/CMakeFiles/_catkin_empty_exported_target.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir
+# Directory level rules for directory google_assistant
 
-# All Build rule for target.
-speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/all: speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/all
-speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/all: speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=6 "Built target speech_service_generate_messages_lisp"
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/all
+# Convenience name for "all" pass in the directory.
+google_assistant/all:
 
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/rule
+.PHONY : google_assistant/all
 
-# Convenience name for target.
-speech_service_generate_messages_lisp: speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/rule
+# Convenience name for "clean" pass in the directory.
+google_assistant/clean:
 
-.PHONY : speech_service_generate_messages_lisp
+.PHONY : google_assistant/clean
 
-# clean rule for target.
-speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/clean
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/clean
+# Convenience name for "preinstall" pass in the directory.
+google_assistant/preinstall:
 
-# clean rule for target.
-clean: speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/clean
-
-.PHONY : clean
+.PHONY : google_assistant/preinstall
 
 #=============================================================================
-# Target rules for target speech_service/CMakeFiles/speech_service_genlisp.dir
+# Directory level rules for directory speech_detector
 
-# All Build rule for target.
-speech_service/CMakeFiles/speech_service_genlisp.dir/all: speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/all
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_genlisp.dir/build.make speech_service/CMakeFiles/speech_service_genlisp.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_genlisp.dir/build.make speech_service/CMakeFiles/speech_service_genlisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target speech_service_genlisp"
-.PHONY : speech_service/CMakeFiles/speech_service_genlisp.dir/all
+# Convenience name for "all" pass in the directory.
+speech_detector/all:
 
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/speech_service_genlisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/speech_service_genlisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/speech_service_genlisp.dir/rule
+.PHONY : speech_detector/all
 
-# Convenience name for target.
-speech_service_genlisp: speech_service/CMakeFiles/speech_service_genlisp.dir/rule
+# Convenience name for "clean" pass in the directory.
+speech_detector/clean:
 
-.PHONY : speech_service_genlisp
+.PHONY : speech_detector/clean
 
-# clean rule for target.
-speech_service/CMakeFiles/speech_service_genlisp.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_genlisp.dir/build.make speech_service/CMakeFiles/speech_service_genlisp.dir/clean
-.PHONY : speech_service/CMakeFiles/speech_service_genlisp.dir/clean
+# Convenience name for "preinstall" pass in the directory.
+speech_detector/preinstall:
 
-# clean rule for target.
-clean: speech_service/CMakeFiles/speech_service_genlisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target speech_service/CMakeFiles/std_msgs_generate_messages_py.dir
-
-# All Build rule for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/all:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_py"
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_py: speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-
-.PHONY : std_msgs_generate_messages_py
-
-# clean rule for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target speech_service/CMakeFiles/speech_service_genpy.dir
-
-# All Build rule for target.
-speech_service/CMakeFiles/speech_service_genpy.dir/all: speech_service/CMakeFiles/speech_service_generate_messages_py.dir/all
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_genpy.dir/build.make speech_service/CMakeFiles/speech_service_genpy.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_genpy.dir/build.make speech_service/CMakeFiles/speech_service_genpy.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target speech_service_genpy"
-.PHONY : speech_service/CMakeFiles/speech_service_genpy.dir/all
-
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/speech_service_genpy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/speech_service_genpy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/speech_service_genpy.dir/rule
-
-# Convenience name for target.
-speech_service_genpy: speech_service/CMakeFiles/speech_service_genpy.dir/rule
-
-.PHONY : speech_service_genpy
-
-# clean rule for target.
-speech_service/CMakeFiles/speech_service_genpy.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_genpy.dir/build.make speech_service/CMakeFiles/speech_service_genpy.dir/clean
-.PHONY : speech_service/CMakeFiles/speech_service_genpy.dir/clean
-
-# clean rule for target.
-clean: speech_service/CMakeFiles/speech_service_genpy.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target speech_service/CMakeFiles/speech_service_gencpp.dir
-
-# All Build rule for target.
-speech_service/CMakeFiles/speech_service_gencpp.dir/all: speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/all
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_gencpp.dir/build.make speech_service/CMakeFiles/speech_service_gencpp.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_gencpp.dir/build.make speech_service/CMakeFiles/speech_service_gencpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target speech_service_gencpp"
-.PHONY : speech_service/CMakeFiles/speech_service_gencpp.dir/all
-
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/speech_service_gencpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/speech_service_gencpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/speech_service_gencpp.dir/rule
-
-# Convenience name for target.
-speech_service_gencpp: speech_service/CMakeFiles/speech_service_gencpp.dir/rule
-
-.PHONY : speech_service_gencpp
-
-# clean rule for target.
-speech_service/CMakeFiles/speech_service_gencpp.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_gencpp.dir/build.make speech_service/CMakeFiles/speech_service_gencpp.dir/clean
-.PHONY : speech_service/CMakeFiles/speech_service_gencpp.dir/clean
-
-# clean rule for target.
-clean: speech_service/CMakeFiles/speech_service_gencpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target speech_service/CMakeFiles/speech_service_generate_messages.dir
-
-# All Build rule for target.
-speech_service/CMakeFiles/speech_service_generate_messages.dir/all: speech_service/CMakeFiles/speech_service_generate_messages_py.dir/all
-speech_service/CMakeFiles/speech_service_generate_messages.dir/all: speech_service/CMakeFiles/speech_service_generate_messages_lisp.dir/all
-speech_service/CMakeFiles/speech_service_generate_messages.dir/all: speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/all
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target speech_service_generate_messages"
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages.dir/all
-
-# Include target in all.
-all: speech_service/CMakeFiles/speech_service_generate_messages.dir/all
-
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/speech_service_generate_messages.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 4
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/speech_service_generate_messages.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages.dir/rule
-
-# Convenience name for target.
-speech_service_generate_messages: speech_service/CMakeFiles/speech_service_generate_messages.dir/rule
-
-.PHONY : speech_service_generate_messages
-
-# clean rule for target.
-speech_service/CMakeFiles/speech_service_generate_messages.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages.dir/clean
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages.dir/clean
-
-# clean rule for target.
-clean: speech_service/CMakeFiles/speech_service_generate_messages.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir
-
-# All Build rule for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/all:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target std_msgs_generate_messages_lisp"
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-std_msgs_generate_messages_lisp: speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-
-.PHONY : std_msgs_generate_messages_lisp
-
-# clean rule for target.
-speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-.PHONY : speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-# clean rule for target.
-clean: speech_service/CMakeFiles/std_msgs_generate_messages_lisp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir
-
-# All Build rule for target.
-speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/all: speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/all
-speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/all: speech_service/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=5 "Built target speech_service_generate_messages_cpp"
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/all
-
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-speech_service_generate_messages_cpp: speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/rule
-
-.PHONY : speech_service_generate_messages_cpp
-
-# clean rule for target.
-speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/clean
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/clean
-
-# clean rule for target.
-clean: speech_service/CMakeFiles/speech_service_generate_messages_cpp.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir
-
-# All Build rule for target.
-speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/all:
-	$(MAKE) -f speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/build.make speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/build.make speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num= "Built target _speech_service_generate_messages_check_deps_ReturnDetectedSpeech"
-.PHONY : speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/all
-
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/rule
-
-# Convenience name for target.
-_speech_service_generate_messages_check_deps_ReturnDetectedSpeech: speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/rule
-
-.PHONY : _speech_service_generate_messages_check_deps_ReturnDetectedSpeech
-
-# clean rule for target.
-speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/build.make speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/clean
-.PHONY : speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/clean
-
-# clean rule for target.
-clean: speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/clean
-
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target speech_service/CMakeFiles/speech_service_generate_messages_py.dir
-
-# All Build rule for target.
-speech_service/CMakeFiles/speech_service_generate_messages_py.dir/all: speech_service/CMakeFiles/_speech_service_generate_messages_check_deps_ReturnDetectedSpeech.dir/all
-speech_service/CMakeFiles/speech_service_generate_messages_py.dir/all: speech_service/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_py.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_py.dir/depend
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_py.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_py.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/pi/apollo_ws/build/CMakeFiles --progress-num=7,8 "Built target speech_service_generate_messages_py"
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_py.dir/all
-
-# Build rule for subdir invocation for target.
-speech_service/CMakeFiles/speech_service_generate_messages_py.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 speech_service/CMakeFiles/speech_service_generate_messages_py.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pi/apollo_ws/build/CMakeFiles 0
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_py.dir/rule
-
-# Convenience name for target.
-speech_service_generate_messages_py: speech_service/CMakeFiles/speech_service_generate_messages_py.dir/rule
-
-.PHONY : speech_service_generate_messages_py
-
-# clean rule for target.
-speech_service/CMakeFiles/speech_service_generate_messages_py.dir/clean:
-	$(MAKE) -f speech_service/CMakeFiles/speech_service_generate_messages_py.dir/build.make speech_service/CMakeFiles/speech_service_generate_messages_py.dir/clean
-.PHONY : speech_service/CMakeFiles/speech_service_generate_messages_py.dir/clean
-
-# clean rule for target.
-clean: speech_service/CMakeFiles/speech_service_generate_messages_py.dir/clean
-
-.PHONY : clean
+.PHONY : speech_detector/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.
