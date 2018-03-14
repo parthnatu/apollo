@@ -20,7 +20,7 @@ import time
 import wave
 import math
 import array
-
+from time import sleep
 import click
 import sounddevice as sd
 
