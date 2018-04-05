@@ -33,7 +33,7 @@ from google.assistant.embedded.v1alpha2 import (
     embedded_assistant_pb2,
     embedded_assistant_pb2_grpc
 )
-from tenacity import retry, stop_after_attempt, retry_if_exception
+#from tenacity import retry, stop_after_attempt, retry_if_exception
 
 try:
     from . import (
@@ -107,8 +107,8 @@ class SampleAssistant(object):
             return True
         return False
 
-    @retry(reraise=True, stop=stop_after_attempt(3),
-           retry=retry_if_exception(is_grpc_error_unavailable))
+    #@retry(reraise=True, stop=stop_after_attempt(3),
+    #       retry=retry_if_exception(is_grpc_error_unavailable))
     def assist(self):
         """Send a voice request to the Assistant and playback the response.
 

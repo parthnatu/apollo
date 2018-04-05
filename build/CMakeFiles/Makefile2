@@ -371,6 +371,24 @@ google_assistant/preinstall:
 .PHONY : google_assistant/preinstall
 
 #=============================================================================
+# Directory level rules for directory initassistant
+
+# Convenience name for "all" pass in the directory.
+initassistant/all:
+
+.PHONY : initassistant/all
+
+# Convenience name for "clean" pass in the directory.
+initassistant/clean:
+
+.PHONY : initassistant/clean
+
+# Convenience name for "preinstall" pass in the directory.
+initassistant/preinstall:
+
+.PHONY : initassistant/preinstall
+
+#=============================================================================
 # Directory level rules for directory speech_detector
 
 # Convenience name for "all" pass in the directory.

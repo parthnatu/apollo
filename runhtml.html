@@ -1,0 +1,142 @@
+<meta charset="utf-8" />
+
+<script type="text/javascript" src="http://static.robotwebtools.org/EventEmitter2/current/eventemitter2.min.js"></script>
+<script type="text/javascript" src="http://static.robotwebtools.org/roslibjs/current/roslib.min.js"></script>
+<div id="output">
+
+    </div>
+    <div id="loader">
+        
+    </div>
+    <!--<div id="signal">
+    </div>-->
+<script type="text/javascript" type="text/javascript">
+  // Connecting to ROS
+  // -----------------
+  //document.getElementById("loader").className = 'disappear';
+  var ros = new ROSLIB.Ros({
+    url : 'ws://localhost:9090'
+  });
+
+  ros.on('connection', function() {
+    console.log('Connected to websocket server.');
+  });
+  ros.on('close', function() {
+    console.log('Connection to websocket server closed.');
+  });
+
+   var listener = new ROSLIB.Topic({
+    ros : ros,
+    name : '/recognized_string',
+    messageType : 'std_msgs/String'
+  });
+  var listener2= new ROSLIB.Topic({
+    ros : ros,
+    name : '/ready_hotword',
+    messageType : 'std_msgs/Bool'
+  });
+  listener.subscribe(function(message) {
+    console.log('Received message on ' + listener.name + ': ' + message.data);
+    if(message.data !== "SPEAK, HUMAN."){
+	document.getElementById("output").className = '';
+	//document.getElementById("signal").className = 'disappear';
+    document.getElementById("output").innerHTML = "You said: " +message.data;
+    //listener.unsubscribe();
+    }
+    else{
+	document.getElementById("output").className = '';
+	//document.getElementById("signal").className = 'disappear';
+        document.getElementById("output").innerHTML = message.data;
+    }
+  });
+  listener2.subscribe(function(message) {
+    //console.log('Received message on ' + listener.name + ': ' + message.data);
+    if(message.data){
+        document.getElementById("loader").className = 'disappear';
+	document.getElementById("output").className = '';
+    }
+    else{
+	 document.getElementById("output").className = 'disappear';
+        document.getElementById("loader").className = '';
+    }
+	
+  });
+  </script>
+<style>
+    body{
+        background-color: black;
+    }
+    #output{
+        text-align: center;
+        font-family: monospace;
+        font-size:30px;
+        color:white;
+        position: absolute;
+        top :50%;
+        left: 50%;
+        transform:translate(-50%,-50%);
+        
+    }
+    .disappear{
+        display: none;
+    }
+    #loader {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+ 
+  margin: 100px auto;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% { 
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+  } 50% { 
+    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+  } 100% { 
+    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+  }
+}
+#signal {
+    border: 5px solid #333;
+    border-radius: 30px;
+    height: 30px;
+    left: 50%;
+    margin: -15px 0 0 -15px;
+    opacity: 0;
+    position: absolute;
+  top :50%;
+  left: 50%;
+  transform:translate(-50%,-50%); 
+    animation: pulsate 1s ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pulsate {
+    0% {
+      transform: scale(.1);
+      opacity: 0.0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.2);
+      opacity: 0;
+    }
+}
+</style>
+
+
+

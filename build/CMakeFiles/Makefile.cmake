@@ -14,11 +14,14 @@ set(CMAKE_MAKEFILE_DEPENDS
   "catkin_generated/installspace/_setup_util.py"
   "catkin_generated/order_packages.cmake"
   "google_assistant/catkin_generated/package.cmake"
+  "initassistant/catkin_generated/package.cmake"
   "speech_detector/catkin_generated/package.cmake"
   "voice_file/catkin_generated/package.cmake"
   "/home/pi/apollo_ws/src/CMakeLists.txt"
   "/home/pi/apollo_ws/src/google_assistant/CMakeLists.txt"
   "/home/pi/apollo_ws/src/google_assistant/package.xml"
+  "/home/pi/apollo_ws/src/initassistant/CMakeLists.txt"
+  "/home/pi/apollo_ws/src/initassistant/package.xml"
   "/home/pi/apollo_ws/src/speech_detector/CMakeLists.txt"
   "/home/pi/apollo_ws/src/speech_detector/package.xml"
   "/home/pi/apollo_ws/src/voice_file/CMakeLists.txt"
@@ -131,6 +134,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "gtest/CMakeFiles/CMakeDirectoryInformation.cmake"
   "voice_file/CMakeFiles/CMakeDirectoryInformation.cmake"
   "google_assistant/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "initassistant/CMakeFiles/CMakeDirectoryInformation.cmake"
   "speech_detector/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 

@@ -7,4 +7,5 @@
 subdirs(gtest)
 subdirs(voice_file)
 subdirs(google_assistant)
+subdirs(initassistant)
 subdirs(speech_detector)

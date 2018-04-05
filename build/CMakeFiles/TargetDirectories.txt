@@ -34,6 +34,13 @@
 /home/pi/apollo_ws/build/google_assistant/CMakeFiles/list_install_components.dir
 /home/pi/apollo_ws/build/google_assistant/CMakeFiles/install.dir
 /home/pi/apollo_ws/build/google_assistant/CMakeFiles/install/local.dir
+/home/pi/apollo_ws/build/initassistant/CMakeFiles/test.dir
+/home/pi/apollo_ws/build/initassistant/CMakeFiles/edit_cache.dir
+/home/pi/apollo_ws/build/initassistant/CMakeFiles/install/strip.dir
+/home/pi/apollo_ws/build/initassistant/CMakeFiles/rebuild_cache.dir
+/home/pi/apollo_ws/build/initassistant/CMakeFiles/list_install_components.dir
+/home/pi/apollo_ws/build/initassistant/CMakeFiles/install.dir
+/home/pi/apollo_ws/build/initassistant/CMakeFiles/install/local.dir
 /home/pi/apollo_ws/build/speech_detector/CMakeFiles/test.dir
 /home/pi/apollo_ws/build/speech_detector/CMakeFiles/edit_cache.dir
 /home/pi/apollo_ws/build/speech_detector/CMakeFiles/install/strip.dir
