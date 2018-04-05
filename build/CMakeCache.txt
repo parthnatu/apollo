@@ -216,6 +216,9 @@ LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests-2.7
 
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 
@@ -246,11 +249,23 @@ _CATKIN_GTEST_INCLUDE:FILEPATH=/usr/include/gtest/gtest.h
 //Path to a file.
 _CATKIN_GTEST_SRC:FILEPATH=/usr/src/gtest/src/gtest.cc
 
+//The directory containing a CMake configuration file for camera_calibration_parsers.
+camera_calibration_parsers_DIR:PATH=/opt/ros/indigo/share/camera_calibration_parsers/cmake
+
+//The directory containing a CMake configuration file for camera_info_manager.
+camera_info_manager_DIR:PATH=/opt/ros/indigo/share/camera_info_manager/cmake
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/indigo/share/catkin/cmake
 
+//The directory containing a CMake configuration file for class_loader.
+class_loader_DIR:PATH=/opt/ros/indigo/share/class_loader/cmake
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/indigo/share/cpp_common/cmake
+
+//The directory containing a CMake configuration file for cv_bridge.
+cv_bridge_DIR:PATH=cv_bridge_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for gencpp.
 gencpp_DIR:PATH=/opt/ros/indigo/share/gencpp/cmake
@@ -263,6 +278,9 @@ genmsg_DIR:PATH=/opt/ros/indigo/share/genmsg/cmake
 
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/indigo/share/genpy/cmake
+
+//The directory containing a CMake configuration file for geometry_msgs.
+geometry_msgs_DIR:PATH=/opt/ros/indigo/share/geometry_msgs/cmake
 
 //Value Computed by CMake
 google_assistant_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/google_assistant
@@ -295,6 +313,9 @@ gtest_force_shared_crt:BOOL=OFF
 //Dependencies for the target
 gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
+//The directory containing a CMake configuration file for image_transport.
+image_transport_DIR:PATH=/opt/ros/indigo/share/image_transport/cmake
+
 //Value Computed by CMake
 initassistant_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/initassistant
 
@@ -302,7 +323,10 @@ initassistant_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/initassistant
 initassistant_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/initassistant
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/indigo/lib/librostime.so
+lib:FILEPATH=/opt/ros/indigo/lib/librospack.so
+
+//The directory containing a CMake configuration file for message_filters.
+message_filters_DIR:PATH=/opt/ros/indigo/share/message_filters/cmake
 
 //The directory containing a CMake configuration file for message_generation.
 message_generation_DIR:PATH=/opt/ros/indigo/share/message_generation/cmake
@@ -310,17 +334,44 @@ message_generation_DIR:PATH=/opt/ros/indigo/share/message_generation/cmake
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/indigo/share/message_runtime/cmake
 
+//Value Computed by CMake
+mjpeg_server_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/mjpeg_server
+
+//Value Computed by CMake
+mjpeg_server_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/mjpeg_server
+
+//The directory containing a CMake configuration file for pluginlib.
+pluginlib_DIR:PATH=/opt/ros/indigo/share/pluginlib/cmake
+
+//The directory containing a CMake configuration file for rosconsole.
+rosconsole_DIR:PATH=/opt/ros/indigo/share/rosconsole/cmake
+
+//The directory containing a CMake configuration file for roscpp.
+roscpp_DIR:PATH=/opt/ros/indigo/share/roscpp/cmake
+
 //The directory containing a CMake configuration file for roscpp_serialization.
 roscpp_serialization_DIR:PATH=/opt/ros/indigo/share/roscpp_serialization/cmake
 
 //The directory containing a CMake configuration file for roscpp_traits.
 roscpp_traits_DIR:PATH=/opt/ros/indigo/share/roscpp_traits/cmake
 
+//The directory containing a CMake configuration file for rosgraph_msgs.
+rosgraph_msgs_DIR:PATH=/opt/ros/indigo/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for roslib.
+roslib_DIR:PATH=/opt/ros/indigo/share/roslib/cmake
+
+//The directory containing a CMake configuration file for rospack.
+rospack_DIR:PATH=/opt/ros/indigo/share/rospack/cmake
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/indigo/share/rospy/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/indigo/share/rostime/cmake
+
+//The directory containing a CMake configuration file for sensor_msgs.
+sensor_msgs_DIR:PATH=/opt/ros/indigo/share/sensor_msgs/cmake
 
 //Value Computed by CMake
 speech_detector_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/speech_detector
@@ -337,11 +388,26 @@ speech_service_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/speech_service
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/indigo/share/std_msgs/cmake
 
+//The directory containing a CMake configuration file for std_srvs.
+std_srvs_DIR:PATH=/opt/ros/indigo/share/std_srvs/cmake
+
+//Value Computed by CMake
+usb_cam_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/usb_cam
+
+//Dependencies for the target
+usb_cam_LIB_DEPENDS:STATIC=general;avcodec;general;swscale;general;/opt/ros/indigo/lib/libimage_transport.so;general;/opt/ros/indigo/lib/libmessage_filters.so;general;/opt/ros/indigo/lib/libclass_loader.so;general;/usr/lib/libPocoFoundation.so;general;/usr/lib/arm-linux-gnueabihf/libdl.so;general;/opt/ros/indigo/lib/libroslib.so;general;/opt/ros/indigo/lib/librospack.so;general;/usr/lib/arm-linux-gnueabihf/libpython2.7.so;general;/usr/lib/arm-linux-gnueabihf/libboost_program_options.so;general;/usr/lib/arm-linux-gnueabihf/libtinyxml.so;general;/opt/ros/indigo/lib/libcamera_info_manager.so;general;/opt/ros/indigo/lib/libcamera_calibration_parsers.so;general;/opt/ros/indigo/lib/libroscpp.so;general;/usr/lib/arm-linux-gnueabihf/libboost_signals.so;general;/usr/lib/arm-linux-gnueabihf/libboost_filesystem.so;general;/opt/ros/indigo/lib/librosconsole.so;general;/opt/ros/indigo/lib/librosconsole_log4cxx.so;general;/opt/ros/indigo/lib/librosconsole_backend_interface.so;general;/usr/lib/arm-linux-gnueabihf/liblog4cxx.so;general;/usr/lib/arm-linux-gnueabihf/libboost_regex.so;general;/opt/ros/indigo/lib/libxmlrpcpp.so;general;/opt/ros/indigo/lib/libroscpp_serialization.so;general;/opt/ros/indigo/lib/librostime.so;general;/opt/ros/indigo/lib/libcpp_common.so;general;/usr/lib/arm-linux-gnueabihf/libboost_system.so;general;/usr/lib/arm-linux-gnueabihf/libboost_thread.so;general;/usr/lib/arm-linux-gnueabihf/libboost_chrono.so;general;/usr/lib/arm-linux-gnueabihf/libboost_date_time.so;general;/usr/lib/arm-linux-gnueabihf/libboost_atomic.so;general;/usr/lib/arm-linux-gnueabihf/libpthread.so;general;/usr/lib/arm-linux-gnueabihf/libconsole_bridge.so;
+
+//Value Computed by CMake
+usb_cam_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/usb_cam
+
 //Value Computed by CMake
 voice_file_BINARY_DIR:STATIC=/home/pi/apollo_ws/build/voice_file
 
 //Value Computed by CMake
 voice_file_SOURCE_DIR:STATIC=/home/pi/apollo_ws/src/voice_file
+
+//The directory containing a CMake configuration file for xmlrpcpp.
+xmlrpcpp_DIR:PATH=/opt/ros/indigo/share/xmlrpcpp/cmake
 
 
 ########################
@@ -484,6 +550,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.28()]
 //Details about finding PythonInterp
 FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python][v2.7.9()]
 //Details about finding Threads
@@ -503,10 +571,83 @@ GTEST_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 GTEST_MAIN_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GTEST_MAIN_LIBRARY_DEBUG
 GTEST_MAIN_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PYTHON_EXECUTABLE
 PYTHON_EXECUTABLE-ADVANCED:INTERNAL=1
 //This needs to be in PYTHONPATH when 'setup.py install' is called.
 //  And it needs to match.  But setuptools won't tell us where
 // it will install things.
 PYTHON_INSTALL_DIR:INTERNAL=lib/python2.7/dist-packages
+__pkg_config_checked_avcodec:INTERNAL=1
+__pkg_config_checked_swscale:INTERNAL=1
+avcodec_CFLAGS:INTERNAL=
+avcodec_CFLAGS_I:INTERNAL=
+avcodec_CFLAGS_OTHER:INTERNAL=
+avcodec_FOUND:INTERNAL=1
+avcodec_INCLUDEDIR:INTERNAL=/usr/include
+avcodec_INCLUDE_DIRS:INTERNAL=
+avcodec_LDFLAGS:INTERNAL=-lavcodec
+avcodec_LDFLAGS_OTHER:INTERNAL=
+avcodec_LIBDIR:INTERNAL=/usr/lib/arm-linux-gnueabihf
+avcodec_LIBRARIES:INTERNAL=avcodec
+avcodec_LIBRARY_DIRS:INTERNAL=
+avcodec_LIBS:INTERNAL=
+avcodec_LIBS_L:INTERNAL=
+avcodec_LIBS_OTHER:INTERNAL=
+avcodec_LIBS_PATHS:INTERNAL=
+avcodec_PREFIX:INTERNAL=/usr
+avcodec_STATIC_CFLAGS:INTERNAL=
+avcodec_STATIC_CFLAGS_I:INTERNAL=
+avcodec_STATIC_CFLAGS_OTHER:INTERNAL=
+avcodec_STATIC_INCLUDE_DIRS:INTERNAL=
+avcodec_STATIC_LDFLAGS:INTERNAL=-lavcodec;-ldl;-lXfixes;-lXext;-lX11;-lcdio_paranoia;-lcdio_cdda;-lcdio;-ljack;-lasound;-ldc1394;-lraw1394;-lnettle;-lhogweed;-lgmp;-lxvidcore;-lx264;-lvpx;-lvorbisenc;-lvorbis;-logg;-ltheoraenc;-ltheoradec;-logg;-lspeex;-lschroedinger-1.0;-lrtmp;-lz;-lgmp;-lpulse-simple;-lpulse;-lopus;-lopenjpeg;-DOPJ_STATIC;/usr/lib/arm-linux-gnueabihf/libopencv_calib3d.so;-lopencv_calib3d;/usr/lib/arm-linux-gnueabihf/libopencv_contrib.so;-lopencv_contrib;/usr/lib/arm-linux-gnueabihf/libopencv_core.so;-lopencv_core;/usr/lib/arm-linux-gnueabihf/libopencv_features2d.so;-lopencv_features2d;/usr/lib/arm-linux-gnueabihf/libopencv_flann.so;-lopencv_flann;/usr/lib/arm-linux-gnueabihf/libopencv_gpu.so;-lopencv_gpu;/usr/lib/arm-linux-gnueabihf/libopencv_highgui.so;-lopencv_highgui;/usr/lib/arm-linux-gnueabihf/libopencv_imgproc.so;-lopencv_imgproc;/usr/lib/arm-linux-gnueabihf/libopencv_legacy.so;-lopencv_legacy;/usr/lib/arm-linux-gnueabihf/libopencv_ml.so;-lopencv_ml;/usr/lib/arm-linux-gnueabihf/libopencv_objdetect.so;-lopencv_objdetect;/usr/lib/arm-linux-gnueabihf/libopencv_ocl.so;-lopencv_ocl;/usr/lib/arm-linux-gnueabihf/libopencv_photo.so;-lopencv_photo;/usr/lib/arm-linux-gnueabihf/libopencv_stitching.so;-lopencv_stitching;/usr/lib/arm-linux-gnueabihf/libopencv_superres.so;-lopencv_superres;/usr/lib/arm-linux-gnueabihf/libopencv_ts.so;-lopencv_ts;/usr/lib/arm-linux-gnueabihf/libopencv_video.so;-lopencv_video;/usr/lib/arm-linux-gnueabihf/libopencv_videostab.so;-lopencv_videostab;-lmp3lame;-lgsm;-lfreetype;-lgnutls;-lva;-lm;-lbz2;-lz;-pthread;-lavresample;-lm;-lavutil;-lm
+avcodec_STATIC_LDFLAGS_OTHER:INTERNAL=-DOPJ_STATIC;/usr/lib/arm-linux-gnueabihf/libopencv_calib3d.so;/usr/lib/arm-linux-gnueabihf/libopencv_contrib.so;/usr/lib/arm-linux-gnueabihf/libopencv_core.so;/usr/lib/arm-linux-gnueabihf/libopencv_features2d.so;/usr/lib/arm-linux-gnueabihf/libopencv_flann.so;/usr/lib/arm-linux-gnueabihf/libopencv_gpu.so;/usr/lib/arm-linux-gnueabihf/libopencv_highgui.so;/usr/lib/arm-linux-gnueabihf/libopencv_imgproc.so;/usr/lib/arm-linux-gnueabihf/libopencv_legacy.so;/usr/lib/arm-linux-gnueabihf/libopencv_ml.so;/usr/lib/arm-linux-gnueabihf/libopencv_objdetect.so;/usr/lib/arm-linux-gnueabihf/libopencv_ocl.so;/usr/lib/arm-linux-gnueabihf/libopencv_photo.so;/usr/lib/arm-linux-gnueabihf/libopencv_stitching.so;/usr/lib/arm-linux-gnueabihf/libopencv_superres.so;/usr/lib/arm-linux-gnueabihf/libopencv_ts.so;/usr/lib/arm-linux-gnueabihf/libopencv_video.so;/usr/lib/arm-linux-gnueabihf/libopencv_videostab.so;-pthread
+avcodec_STATIC_LIBDIR:INTERNAL=
+avcodec_STATIC_LIBRARIES:INTERNAL=avcodec;dl;Xfixes;Xext;X11;cdio_paranoia;cdio_cdda;cdio;jack;asound;dc1394;raw1394;nettle;hogweed;gmp;xvidcore;x264;vpx;vorbisenc;vorbis;ogg;theoraenc;theoradec;ogg;speex;schroedinger-1.0;rtmp;z;gmp;pulse-simple;pulse;opus;openjpeg;opencv_calib3d;opencv_contrib;opencv_core;opencv_features2d;opencv_flann;opencv_gpu;opencv_highgui;opencv_imgproc;opencv_legacy;opencv_ml;opencv_objdetect;opencv_ocl;opencv_photo;opencv_stitching;opencv_superres;opencv_ts;opencv_video;opencv_videostab;mp3lame;gsm;freetype;gnutls;va;m;bz2;z;avresample;m;avutil;m
+avcodec_STATIC_LIBRARY_DIRS:INTERNAL=
+avcodec_STATIC_LIBS:INTERNAL=
+avcodec_STATIC_LIBS_L:INTERNAL=
+avcodec_STATIC_LIBS_OTHER:INTERNAL=
+avcodec_STATIC_LIBS_PATHS:INTERNAL=
+avcodec_VERSION:INTERNAL=56.1.0
+avcodec_libavcodec_INCLUDEDIR:INTERNAL=
+avcodec_libavcodec_LIBDIR:INTERNAL=
+avcodec_libavcodec_PREFIX:INTERNAL=
+avcodec_libavcodec_VERSION:INTERNAL=
+prefix_result:INTERNAL=/usr/lib/arm-linux-gnueabihf
+swscale_CFLAGS:INTERNAL=
+swscale_CFLAGS_I:INTERNAL=
+swscale_CFLAGS_OTHER:INTERNAL=
+swscale_FOUND:INTERNAL=1
+swscale_INCLUDEDIR:INTERNAL=/usr/include
+swscale_INCLUDE_DIRS:INTERNAL=
+swscale_LDFLAGS:INTERNAL=-lswscale
+swscale_LDFLAGS_OTHER:INTERNAL=
+swscale_LIBDIR:INTERNAL=/usr/lib/arm-linux-gnueabihf
+swscale_LIBRARIES:INTERNAL=swscale
+swscale_LIBRARY_DIRS:INTERNAL=
+swscale_LIBS:INTERNAL=
+swscale_LIBS_L:INTERNAL=
+swscale_LIBS_OTHER:INTERNAL=
+swscale_LIBS_PATHS:INTERNAL=
+swscale_PREFIX:INTERNAL=/usr
+swscale_STATIC_CFLAGS:INTERNAL=
+swscale_STATIC_CFLAGS_I:INTERNAL=
+swscale_STATIC_CFLAGS_OTHER:INTERNAL=
+swscale_STATIC_INCLUDE_DIRS:INTERNAL=
+swscale_STATIC_LDFLAGS:INTERNAL=-lswscale;-lm;-lavutil;-lm
+swscale_STATIC_LDFLAGS_OTHER:INTERNAL=
+swscale_STATIC_LIBDIR:INTERNAL=
+swscale_STATIC_LIBRARIES:INTERNAL=swscale;m;avutil;m
+swscale_STATIC_LIBRARY_DIRS:INTERNAL=
+swscale_STATIC_LIBS:INTERNAL=
+swscale_STATIC_LIBS_L:INTERNAL=
+swscale_STATIC_LIBS_OTHER:INTERNAL=
+swscale_STATIC_LIBS_PATHS:INTERNAL=
+swscale_VERSION:INTERNAL=3.0.0
+swscale_libswscale_INCLUDEDIR:INTERNAL=
+swscale_libswscale_LIBDIR:INTERNAL=
+swscale_libswscale_PREFIX:INTERNAL=
+swscale_libswscale_VERSION:INTERNAL=
 
