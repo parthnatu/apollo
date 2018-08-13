@@ -1,8 +1,0 @@
-prefix=/home/pi/apollo_ws/install
-
-Name: speech_service
-Description: Description of speech_service
-Version: 0.0.0
-Cflags: -I/home/pi/apollo_ws/install/include
-Libs: -L/home/pi/apollo_ws/install/lib 
-Requires: 

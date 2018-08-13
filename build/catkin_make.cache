@@ -1,2 +1,0 @@
-google_assistant:initassistant:mjpeg_server:speech_detector:usb_cam:voice_file
--DCATKIN_DEVEL_PREFIX=/home/pi/apollo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pi/apollo_ws/install -G Unix Makefiles
